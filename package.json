@@ -1,0 +1,28 @@
+{
+  "name": "projetobit",
+  "version": "1.0.0",
+  "description": "Projeto feito por Kauan Carlos Campos e supervisionado por Matheus Pesarini",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./index.js localhost 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kauan-git-profile/ProjetoBIT.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Kauan-git-profile/ProjetoBIT/issues"
+  },
+  "homepage": "https://github.com/Kauan-git-profile/ProjetoBIT#readme",
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "mongoose": "^8.17.0",
+    "nodemon": "^3.1.10"
+  }
+}
