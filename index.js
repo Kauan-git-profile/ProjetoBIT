@@ -6,8 +6,8 @@ require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 //Dessa forma eu deixo varáiveis de ambiente mais seguras
-const DB_USER = "kauanccunio";
-const DB_PASSWORD = encodeURIComponent("PGQfQ2w2ucCJ6pG2");
+const DB_USER = process.env.DB_USER;
+const DB_PASSWORD = process.env.DB_PASSWORD;
 
 //iniciando o express
 const app = express();
@@ -18,8 +18,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 //rotas da API
-const personRoutes = require("./routes/personRoutes");
-app.use("/person", personRoutes);
+const taskRoutes = require("./routes/taskRoutes");
+app.use("/task", taskRoutes);
 
 //rota inicial
 app.get("/", (req, res) => {
